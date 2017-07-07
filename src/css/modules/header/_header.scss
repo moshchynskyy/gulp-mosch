@@ -1,0 +1,53 @@
+$blue: #00BCD4;
+$header-color: #0F1010;
+
+#header {
+  background-color: #0F1010;
+}
+.flex-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.menu-item {
+  border-bottom: 4px solid transparent;
+  height: 72px;
+  display: flex;
+  &:nth-child(n+2) {
+    margin-left: 35px;
+  }
+  &:hover {
+    transition: .3s;
+    border-bottom: 4px solid $blue;
+    .menu-item__link {
+      color: $blue;
+      transition: .3s;
+    }
+  }
+  &__link {
+    color:#fff;
+    font-family: 'Lato', sans-serif;
+    text-transform: uppercase;
+    font-size: 1rem;
+    align-self: center;
+  }
+}
+
+
+.mybtn {
+  border:1px solid $blue;
+  padding: 10px 35px;
+  margin: 15px 0;
+  cursor: pointer;
+  .btn-link {
+    color:#fff;
+    text-decoration: none;
+    font-family: 'Lato', sans-serif;
+    text-transform: uppercase;
+  }
+  &:hover {
+    background-color: $blue;
+    transition: .3s;
+  }
+}
