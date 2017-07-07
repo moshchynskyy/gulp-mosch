@@ -1,0 +1,41 @@
+{
+  "name": "boilerplate",
+  "version": "1.0.0",
+  "description": "gulp boilerplate",
+  "main": "index.js",
+  "scripts": {
+    "build": "cross-env NODE_ENV=production gulp",
+    "dev": "cross-env NODE_ENV=development gulp"
+  },
+  "author": "mosch",
+  "license": "ISC",
+  "dependencies": {
+    "browser-sync": "^2.18.5",
+    "gulp": "*",
+    "gulp-add-src": "^0.2.0",
+    "gulp-autoprefixer": "^3.1.1",
+    "gulp-file-include": "^1.0.0",
+    "gulp-imagemin": "^3.1.1",
+    "gulp-clean-css": "*",
+    "gulp-plumber": "^1.1.0",
+    "gulp-plumber-notifier": "0.0.3",
+    "gulp-sass": "^2.3.2",
+    "gulp-sass-glob": "^1.0.8",
+    "gulp-sourcemaps": "^2.2.0",
+    "gulp-uglify": "^2.0.0",
+    "gulp-watch": "*",
+    "imagemin-pngquant": "*",
+    "jquery": "^3.1.1",
+    "remove-svg-properties": "^0.3.3"
+  },
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-connect-php": "^1.0.1",
+    "gulp-env": "^0.4.0",
+    "gulp-remove-html-comments": "^1.0.1",
+    "gulp-rigger": "^0.5.8",
+    "gulp-svgmin": "^1.2.3",
+    "gulp-svgstore": "^6.1.0",
+    "rimraf": "^2.5.4"
+  }
+}

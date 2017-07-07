@@ -1,0 +1,26 @@
+{
+  "name": "boilerplate",
+  "description": "gulp boilerplate",
+  "main": "index.js",
+  "authors": [
+    "mosch"
+  ],
+  "license": "ISC",
+  "keywords": [
+    "bower"
+  ],
+  "homepage": "",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "^3.2.1",
+    "bootstrap": "^3.3.7",
+    "normalize-css": "^7.0.0"
+  }
+}
