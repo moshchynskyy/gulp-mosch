@@ -2,6 +2,5 @@
 @import "lib/grid/bootstrap.min.css";
 @import "base/body";
 @import "modules/header/header";
-
-body {
-  background-color: #ccc}
+@import "modules/first/first";
+@import "modules/footer/footer";
