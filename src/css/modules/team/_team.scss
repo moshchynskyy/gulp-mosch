@@ -1,0 +1,48 @@
+.team {
+  background-color: #fff;
+  padding-bottom: 50px;
+  &__flex-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px 0;
+    border-bottom: 1px solid #999;
+  }
+  &__flex-item {
+    flex-basis: 33%;
+    &-other {
+      flex-basis: 25%;
+    }
+  }
+  &__block-setting {
+    padding-top: 0;
+  }
+  &mate {
+    display: block;
+    margin: 0 auto;
+    border: 10px solid transparent;
+    border-radius: 50%;
+    transition: .25s;
+    &:hover {
+      border: 10px solid $blue;
+    }
+    &-description {
+      padding: 15px 0;
+    }
+    &-name {
+      text-transform: uppercase;
+      color: #000;
+      font-family: $lato;
+    }
+    &-position {
+      font-family: $lato;
+    }
+  }
+  &__quote {
+    text-align: center;
+    font-style: italic;
+    font-family: $lato;
+    color: #000;
+    padding: 100px;
+  }
+}

@@ -27,7 +27,7 @@ var
   path = require('./path'),
   config = {
     server: {
-      baseDir: "./",
+      baseDir: "./app/",
     },
       port:8080
   };
@@ -138,4 +138,4 @@ gulp.task("watch", function () {
   });
 });
 
-gulp.task("default", ["build", "watch"]);
+gulp.task("default", ["webserver", "build", "watch"]);

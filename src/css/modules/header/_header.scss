@@ -1,6 +1,3 @@
-$blue: #00BCD4;
-$header-color: #0F1010;
-
 #header {
   background-color: #0F1010;
 }
@@ -27,7 +24,7 @@ $header-color: #0F1010;
   }
   &__link {
     color:#fff;
-    font-family: 'Lato', sans-serif;
+    font-family: $lato;
     text-transform: uppercase;
     font-size: 1rem;
     align-self: center;
@@ -43,7 +40,7 @@ $header-color: #0F1010;
   .btn-link {
     color:#fff;
     text-decoration: none;
-    font-family: 'Lato', sans-serif;
+    font-family: $lato;
     text-transform: uppercase;
   }
   &:hover {

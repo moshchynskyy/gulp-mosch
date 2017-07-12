@@ -1,0 +1,35 @@
+.platforms {
+  background-color: $blue;
+  padding: 10px 0;
+  &__header-wrapper {
+    position: absolute;
+  }
+  &__headers {
+    text-transform: uppercase;
+    color: #fff;
+    font-family: $lato;
+    font-weight: bold;
+    padding-left: 20px;
+    border-left: 10px solid #fff;
+    padding-top: 30px;
+  }
+  &__flex {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    &-wrapper {
+      width: 60%;
+      margin: 0 auto;
+      padding: 20px 0;
+    }
+  }
+  &__socicon {
+    color: #fff;
+    font-size: 5rem;
+    &-text {
+      text-align: center;
+      color:#fff;
+      font-size: .8rem;
+    }
+  }
+}

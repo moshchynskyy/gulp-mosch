@@ -1,0 +1,110 @@
+.text-area {
+  color: #fff;
+  font-family: $lato;
+  padding: 5px;
+}
+.active {
+  display: block;
+  i {
+  color: $blue !important;
+  }
+}
+.active + .services__icon-text {
+  color: $blue !important;
+}
+.services {
+  background-color: #111;
+  padding: 50px 0;
+  position: relative;
+  &__text-area {
+    width: 50%;
+    margin-bottom: 30px;
+    padding: 5px 40px;
+    border-radius: 50px;
+    box-shadow: 0px 0px 20px 0px rgba(255, 255, 255, 0.3);
+  }
+  &__icon-flex {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    position: relative;
+    bottom: 50px;
+  }
+  &__icon {
+    display: block;
+    margin: 0 auto 25px;
+    &-blue {
+      position: absolute;
+      width: 50%;
+      left:25px;
+      &-last {
+        left: 28px;
+        width: 42%;
+      }
+    }
+  }
+  &__wrapper {
+    position: relative;
+    a {
+      position: relative;
+      text-align: center;
+      display: block;
+      &:hover {
+        i {
+          color: #fff;
+        }
+      }
+      i {
+        font-size: 5rem;
+        color: #4d4d4d;
+      }
+    }
+  }
+  &__wrapper:hover {
+    .active .services__icon {
+      filter: inherit;
+    }
+    .services__icon {
+      filter: brightness(2);
+      cursor: pointer;
+    }
+    .services__icon-text {
+      color: #fff;
+      cursor: pointer;
+    }
+  }
+  &__icon-text {
+    width: 100px;
+    color: #4D4D4D;
+    font-family: $lato;
+    text-transform: uppercase;
+    text-align: center;
+    padding-top: 5px;
+  }
+  &__icon-wrapper {
+    background-image: url("../img/services-arrow.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    padding: 30px 0;
+    margin-top: 50px;
+    position: relative;
+  }
+  &__border {
+    position: absolute;
+    height: 1.2rem;
+    margin-top: 3px;
+    width: calc(50% - 585px);
+    background-color: $blue;
+  }
+  &__headers {
+  }
+  &__h2 {
+    color: #fff;
+    font-size: 2rem;
+    font-family: $lato;
+    font-weight: 100;
+    padding: 2rem 0;
+  }
+
+}

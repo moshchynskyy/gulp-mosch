@@ -1,0 +1,23 @@
+.second {
+  background-color: #fff;
+  border-top: 10px solid $blue;
+  border-bottom: 10px solid $blue;
+  padding: 50px 0;
+  display: flex;
+  align-items: center;
+  &-logo {
+    padding-right: 40px;
+    width: 30%;
+  }
+  &__text {
+    display: inline-block;
+    text-transform: uppercase;
+    font-family: $lato;
+    color: #4D4D4D;
+    font-size: 1.5rem;
+    span {
+      color: #212121;
+      font-weight: bold;
+    }
+  }
+}

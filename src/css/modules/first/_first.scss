@@ -1,4 +1,47 @@
+.element {
+  height: 70px;
+}
 #first {
   height: calc(100vh - 72px);
-  background-image: url("");
+  background-image: url("../img/first-bg.jpg");
+  background-size: cover;
+}
+.first {
+  &__wrapper {
+    position: relative;
+    height: 100%;
+    display: flex;
+    align-items: flex-end;
+  }
+  &__flex {
+    position: relative;
+    border-left: 10px solid $blue;
+    padding-left: 7rem;
+  }
+  &__text {
+    margin: 0;
+    font-family: $lato;
+    color: #fff;
+    text-transform: uppercase;
+    &1 {
+      font-size: 8rem;
+      line-height: 7.5rem;
+      font-weight: 100;
+    }
+    &2 {
+      font-size: 3.5rem;
+      font-weight: 100;
+      padding-bottom: 5rem;
+    }
+  }
+  &__arrow {
+    text-align: center;
+    padding: 1rem 0;
+    a {
+      color: #fff;
+    }
+    .fa {
+      font-size: 2.5rem;
+    }
+  }
 }

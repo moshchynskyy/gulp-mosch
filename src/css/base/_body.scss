@@ -1,4 +1,11 @@
+$blue: #00BCD4;
+$header-color: #0F1010;
+$lato: 'Lato', sans-serif;
+
 li { list-style-type: none}
 ul { padding: 0; margin: 0 !important;}
 a:hover {text-decoration: none}
-.transition {transition: .3s;}
+.transition { transition: .3s;}
+::selection { background: $blue; color: #ffffff; text-shadow: none; }
+p { margin-bottom: 0; }
+.headers { font-size: 1.2rem; color: $blue; font-family: $lato; font-weight: bold; text-transform: uppercase;}

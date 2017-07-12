@@ -1,0 +1,115 @@
+.active-services2 {
+  & + .services2__flex-layout-text-new {
+    display: block;
+  }
+}
+.no-border {
+  border-bottom: 3px solid transparent !important;
+  &:after {
+    content: '';
+    display: block;
+    border: 10px solid transparent;
+    width: 18px;
+    margin-left: calc(50% - 9px);
+    position: absolute;
+    border-top: 8px solid $blue;
+  }
+  .services2__flex-layout {
+    background-color: rgba(0,0,0,0) !important;
+    border: 3px solid $blue !important;
+  }
+  .services2__flex-layout-text {
+    display: none;
+  }
+  .services2__flex-layout-text-new {
+    display: block !important;
+  }
+}
+.services2 {
+  background-color: #fff;
+  border-bottom: 10px solid $blue;
+  padding-bottom: 50px;
+  &__border {
+    width: 10px;
+    height: 50px;
+    background-color: $blue;
+    margin: 0 auto;
+  }
+  &__headers {
+    color: $blue;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-family: $lato;
+    padding: 15px 0;
+  }
+  &__flex-container {
+    display: flex;
+    border: 1px solid $blue;
+    border-bottom: 1px solid transparent;
+    align-items: flex-start;
+    margin-top: 50px;
+  }
+  &__flex-item {
+    flex-basis: 25%;
+    position: relative;
+    padding-bottom: 25px;
+    border-bottom: 3px solid $blue;
+  }
+  &__flex-layout {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    border: 3px solid transparent;
+    width: 100%;
+    height: calc(100% - 25px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(0,0,0,.4);
+    &:hover {
+      transition: .25s;
+      cursor: pointer;
+      background-color: rgba(0,0,0,.15);
+    }
+    &-text {
+      color: #fff;
+      text-transform: uppercase;
+      font-family: $lato;
+      font-size: 1.2rem;
+      font-weight: 100;
+      &-new {
+        color: #000;
+        text-transform: uppercase;
+        font-family: $lato;
+        font-size: 1.2rem;
+        margin-top: 15px;
+        position: absolute;
+        width: 100%;
+        display: none !important;
+        p {
+          text-align: center;
+        }
+      }
+    }
+  }
+  &-text__column {
+    padding: 50px 0;
+  }
+  &-text__column p {
+    column-count: 2;
+    column-gap: 30px;
+    padding-left: 25px;
+    font-family: $lato;
+    &:before {
+      content: '';
+      height: 30px;
+      width: 5px;
+      position: absolute;
+      left: 0;
+      display: block;
+      background-color: #00bcd4;
+    }
+  }
+}
