@@ -1,0 +1,21 @@
+@media all and (max-width: 500px) {
+  .footer-menu, .social-links, .copyright {
+    flex-basis: 100%;
+    text-align: center;
+    padding-top: 25px;
+  }
+  .social-links {
+    justify-content: center;
+  }
+  #footer {
+    ul {
+      flex-direction: column;
+    }
+    .logo {
+      order: 0;
+    }
+  }
+  .footer-menu .menu-item {
+    margin-left: 0 !important;
+  }
+}

@@ -3,12 +3,13 @@
 }
 #first {
   height: calc(100vh - 72px);
-  background-image: url("../img/first-bg.jpg");
+  background: #090a0e url("../img/first-bg.jpg") no-repeat;
   background-size: cover;
 }
 .first {
   &__wrapper {
     position: relative;
+    overflow: hidden;
     height: 100%;
     display: flex;
     align-items: flex-end;

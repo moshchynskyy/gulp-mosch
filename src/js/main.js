@@ -3,6 +3,7 @@
 //= lib/wow.min.js
 new WOW().init();
 //= parts/tabs.js
+//= parts/toggle-menu.js
 //= parts/scroll.js
 //= parts/toTop.js
 //= parts/my-typed.js

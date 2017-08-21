@@ -80,8 +80,14 @@ $(document).ready(function(){
 
 
 // eof services 2 services2__flex-item
+$(".toggle-mnu").click(function() {
+    $('.logo').fadeToggle();
+    $(this).toggleClass("on");
+    $(".menu").slideToggle();
+    return false;
+});
 $(document).ready(function(){
-    $("#menu").on("click","a", function (event) {
+    $("#header").on("click","a", function (event) {
         //отменяем стандартную обработку нажатия по ссылке
         event.preventDefault();
 
@@ -143,8 +149,16 @@ $(document).ready(function(){
 $(document).ready(function(){
     $(window).scroll(function(){
         var bo = $("body").scrollTop();
-        $('#toTop').text(bo);
-        if ( bo > 200 ) { $("#toTop").css("display", "block"); } else { $("#toTop").css("display", "none"); };
+        // $('#toTop').text(bo);
+        if ( bo > 300 ) { $("#toTop").css("display", "flex"); } else { $("#toTop").css("display", "none"); };
+    })
+})
+
+$(document).ready(function(){
+    $(window).scroll(function(){
+        var he = $("body").scrollTop();
+        // $('#toTop').text(bo);
+        if ( he > 600 ) { $("#header").fadeIn().addClass('header-fixed'); } else { $("#header").removeClass('header-fixed'); };
     })
 })
 var typed = new Typed('.element', {

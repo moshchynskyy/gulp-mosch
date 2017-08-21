@@ -1,0 +1,17 @@
+@media all and (max-width: 768px) {
+  .first {
+    &__flex {
+      border-left: 3px solid $blue;
+      padding-left: 1rem;
+    }
+    &__text1 {
+      font-size: 6rem;
+    }
+    &__text2 {
+      font-size: 2rem;
+    }
+  }
+  #first {
+    background-size: contain;
+  }
+}

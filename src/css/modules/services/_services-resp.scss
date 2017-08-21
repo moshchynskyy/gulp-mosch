@@ -1,0 +1,24 @@
+@media all and (max-width: 992px) {
+  .services {
+    &__text-area {
+      width: 100%;
+    }
+    &__icon-flex {
+      justify-content: space-around;
+    }
+    &__wrapper {
+      padding-bottom: 10px;
+    }
+  }
+}
+@media all and (max-width: 768px) {
+  .services {
+    &__text-area {
+      border-radius: 25px;
+      padding: 20px 30px;
+    }
+    &__icon-wrapper {
+      background-image: none;
+    }
+  }
+}

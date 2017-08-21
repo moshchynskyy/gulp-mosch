@@ -5,11 +5,11 @@
 }
 .active {
   display: block;
-  i {
-  color: $blue !important;
+  svg {
+  fill: $blue !important;
   }
 }
-.active + .services__icon-text {
+.services__wrapper > .active + .services__icon-text {
   color: $blue !important;
 }
 .services {
@@ -21,10 +21,11 @@
     margin-bottom: 30px;
     padding: 5px 40px;
     border-radius: 50px;
-    box-shadow: 0px 0px 20px 0px rgba(255, 255, 255, 0.3);
+    box-shadow: 0px 0px 9px 0px rgba(255, 255, 255, 0.3);
   }
   &__icon-flex {
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
     align-items: flex-start;
     position: relative;
@@ -50,27 +51,24 @@
       text-align: center;
       display: block;
       &:hover {
-        i {
-          color: #fff;
+        svg {
+          fill: #fff;
         }
       }
-      i {
-        font-size: 5rem;
-        color: #4d4d4d;
+      svg {
+        width: 65px;
+        fill: #4d4d4d;
       }
     }
   }
   &__wrapper:hover {
-    .active .services__icon {
-      filter: inherit;
-    }
-    .services__icon {
-      filter: brightness(2);
+    a svg {
+      fill: #fff;
       cursor: pointer;
     }
     .services__icon-text {
       color: #fff;
-      cursor: pointer;
+      //cursor: pointer;
     }
   }
   &__icon-text {
@@ -80,13 +78,16 @@
     text-transform: uppercase;
     text-align: center;
     padding-top: 5px;
+    &:hover {
+      color: #4d4d4d;
+    }
   }
   &__icon-wrapper {
     background-image: url("../img/services-arrow.png");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
-    padding: 30px 0;
+    padding: 31px 0;
     margin-top: 50px;
     position: relative;
   }

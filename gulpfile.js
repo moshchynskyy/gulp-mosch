@@ -138,4 +138,4 @@ gulp.task("watch", function () {
   });
 });
 
-gulp.task("default", ["webserver", "build", "watch"]);
+gulp.task("default", ["build", "watch"]);

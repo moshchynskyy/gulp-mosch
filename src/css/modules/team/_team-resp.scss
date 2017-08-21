@@ -1,0 +1,11 @@
+@media all and (max-width: 500px) {
+  .team__quote {
+    padding: 20px;
+  }
+  .team__flex-item {
+    flex-basis: 100% !important;
+    &-other {
+      flex-basis: 100% !important;
+    }
+  }
+}

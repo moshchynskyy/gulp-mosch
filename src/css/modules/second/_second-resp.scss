@@ -1,0 +1,23 @@
+@media all and (max-width: 768px) {
+  .second {
+    padding: 30px 0;
+    &-logo {
+      display: block;
+      padding: 0;
+      margin: 0 auto 20px;
+    }
+    &__text {
+      display: block;
+      text-align: center;
+      .hidden-xs {
+        display: none;
+      }
+    }
+  }
+}
+
+@media all and (max-width: 420px) {
+  .second-logo {
+    width: 50%;
+  }
+}

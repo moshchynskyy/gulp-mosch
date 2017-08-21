@@ -2,10 +2,16 @@
   background-image: url("../img/bg-projects.jpg");
   background-size: cover;
   padding: 50px 0;
+  .services__h2 {
+    padding: 0 !important;
+    text-transform: uppercase;
+    font-size: 1.7rem;
+  }
   &__text {
     color: #A3A2A1;
     font-family:$lato;
     text-align: center;
+    margin-top: -20px;
   }
   &-text {
     background-color: #fff;
@@ -18,7 +24,7 @@
       border-top: 15px solid #252525;
     }
     &__column {
-      padding: 50px 0;
+      padding: 35px 0;
     }
     &__column p {
       column-count: 2;
@@ -40,7 +46,8 @@
     margin-bottom: 50px;
   }
   &__logo-wrapper {
-    margin: 15px 0;
+    margin: 0;
+    margin-top: -30px !important;
   }
 }
 .st0 {
@@ -50,6 +57,18 @@
 .active-svg {
   .st0, .st1, .st2 {
     fill: $blue !important;
+    &:hover {
+      fill: $blue !important;
+    }
+  }
+  svg {
+    fill: $blue !important;
+    &:hover {
+      fill: $blue !important;
+      .st0, .st1, .st2 {
+        fill: $blue !important;
+      }
+    }
   }
 }
 

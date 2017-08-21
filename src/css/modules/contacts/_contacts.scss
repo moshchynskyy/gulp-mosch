@@ -1,0 +1,29 @@
+.contacts {
+  &__text {
+    color: #fff;
+    font-size: 1.2rem;
+    font-family: $lato;
+    margin-top: 100px;
+  }
+  &__flex-wrapper {
+    width: 100%;
+    padding: 50px 0;
+    margin-top: 50px;
+  }
+  &__socicon {
+    color: #fff;
+    font-size: 2rem;
+    &-text {
+      font-family: $lato;
+      padding-left: 20px;
+      color: #fff;
+      font-size: 1rem;
+    }
+  }
+  .platforms__flex {
+    justify-content: space-between !important;
+  }
+  a {
+    color: inherit;
+  }
+}

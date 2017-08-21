@@ -1,0 +1,11 @@
+@media all and (max-width: 768px) {
+  .platforms {
+    &__socicon-wrapper {
+      width: 50%;
+      text-align: center;
+    }
+    &__flex-wrapper {
+      margin-top: 50px;
+    }
+  }
+}

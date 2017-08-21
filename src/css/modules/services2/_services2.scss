@@ -45,6 +45,7 @@
   }
   &__flex-container {
     display: flex;
+    flex-wrap: wrap;
     border: 1px solid $blue;
     border-bottom: 1px solid transparent;
     align-items: flex-start;
@@ -55,6 +56,10 @@
     position: relative;
     padding-bottom: 25px;
     border-bottom: 3px solid $blue;
+    transition: .25s;
+    a {
+      transition: .25s;
+    }
   }
   &__flex-layout {
     position: absolute;
@@ -68,6 +73,7 @@
     align-items: center;
     justify-content: center;
     background-color: rgba(0,0,0,.4);
+    transition: .25s;
     &:hover {
       transition: .25s;
       cursor: pointer;
@@ -79,6 +85,7 @@
       font-family: $lato;
       font-size: 1.2rem;
       font-weight: 100;
+      transition: .25s;
       &-new {
         color: #000;
         text-transform: uppercase;
@@ -88,6 +95,7 @@
         position: absolute;
         width: 100%;
         display: none !important;
+        transition: .25s;
         p {
           text-align: center;
         }
@@ -102,6 +110,7 @@
     column-gap: 30px;
     padding-left: 25px;
     font-family: $lato;
+    transition: .25s;
     &:before {
       content: '';
       height: 30px;

@@ -1,0 +1,21 @@
+@media all and (max-width: 1300px) {
+
+}
+@media all and (max-width: 1024px) {
+  .services2__flex-container {
+    border: 0;
+  }
+  .services2__flex-item {
+    flex-basis: 50%;
+    margin-top: 30px;
+    img {
+      width: 100%;
+    }
+  }
+}
+
+@media all and (max-width: 500px) {
+  .services2-text__column p {
+    column-count: 1;
+  }
+}
